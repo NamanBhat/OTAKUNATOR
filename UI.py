@@ -202,7 +202,7 @@ class UI:
             selected = max(data, key=lambda item:item[1])[0]
 
             #print(data)
-            pixmap = QPixmap("Imgs\\"+selected+".png")
+            pixmap = QPixmap(selected+".png")
             l.setPixmap(pixmap)
             l.setScaledContents(True)
             l.setSizePolicy(QtWidgets.QSizePolicy.Ignored, QtWidgets.QSizePolicy.Ignored)
